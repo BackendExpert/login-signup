@@ -26,11 +26,12 @@ const SignUp = () => {
                     <div className="my-2">
                         <label htmlFor="email">Email : </label>
                         <input type="email" className="w-full h-9 border my-2 rounded pl-2" placeholder="User Email" 
-                        />
+                        onChange={(e) => SetEmail(e.target.value)}/>
                     </div>
                     <div className="my-2">
                         <label htmlFor="password">Password : </label>
-                        <input type="password" className="w-full h-9 border my-2 rounded pl-2" placeholder="User Password" />
+                        <input type="password" className="w-full h-9 border my-2 rounded pl-2" placeholder="User Password" 
+                        onChange={(e) => SetPassword(e.target.value)}/>
                     </div>       
                     <div className="">
                         <button className="w-full h-9 rounded bg-green-600 text-white font-semibold duration-500 hover:bg-green-700">
