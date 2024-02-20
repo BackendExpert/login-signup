@@ -8,7 +8,9 @@ const bcryt = require("bcrypt")
 const jwt = require("jsonwebtoken")
 const cookieParser = require("cookie-parser")
 
+// make connection between the server and mongoos
 
+mongoose.connect("")
 
 const app = express()
 app.use(express.json)
