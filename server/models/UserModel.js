@@ -9,3 +9,6 @@ const UserSchema = new mongoos.Schema({
         default: "visitor"
     }
 })
+
+const UserModel = mongoos.model("users", UserSchema)
+module.exports = UserModel
