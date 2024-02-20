@@ -25,7 +25,13 @@ const SignUp = () => {
                         <input type="password" className="w-full h-9 border my-2 rounded pl-2" placeholder="User Password" />
                     </div>       
                     <div className="">
-                        <button className="w-full h-9 bg-blue-600 text-white font-semibold rounded duration-500 hover:bg-blue-700">Login</button>
+                        <div className="lg:grid grid-cols-2 gap-3">
+                            <div className="">
+                                <button type="reset" className="w-full h-9 rounded bg-red-600 text-white font-semibold duration-500 hover:bg-red-700">
+                                    Clear
+                                </button>
+                            </div>
+                        </div>
                     </div>             
                 </form>
             </div>
