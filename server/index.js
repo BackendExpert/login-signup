@@ -9,6 +9,7 @@ const jwt = require("jsonwebtoken")
 const cookieParser = require("cookie-parser")
 
 // use UserModel from models folder
+const UserModel = require("./models/UserModel")
 
 // make connection between the server and mongoos
 
