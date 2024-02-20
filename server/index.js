@@ -16,11 +16,11 @@ mongoose.connect("mongodb://127.0.0.1:27017/employee");
 
 // make route for the register
 app.post('/Signup', (req, res) => {
-    const {name, email, password} = req.body;
+    const {fname, lname, email, password} = req.body;
     //hash password
     bcryt.hash(password, 10)
     .then(hash => {
-        UserModel.create({name, email, password: hash})
+        UserModel.create({fname, lname, email, password: hash})
         .then(user => res.json({status: "OK"}))
         .catch(err => res.json(err))
     }).catch(err => res.json(err))
