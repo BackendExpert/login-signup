@@ -3,13 +3,12 @@ import { useState } from "react"
 
 const SignUp = () => {
     const [fname, SetFname] = useState("")
-    const [lname, SetLname] = useState("")
     const [email, SetEmail] = useState("")
     const [password, SetPassword] = useState("")
 
     const headlSubmit = (e) =>{
         e.preventDefault()
-        axios.post('http://localhost:3001/Signup', {fname, lname, email, password})
+        axios.post('http://localhost:3001/Signup', {fname, email, password})
         .then(res => {
             alert("User Added")
         }).catch(err => console.log(err))
@@ -27,11 +26,6 @@ const SignUp = () => {
                         <label htmlFor="fname">First Name : </label>
                         <input type="text" className="w-full h-9 border my-2 rounded pl-2" placeholder="User First Name" 
                         onChange={(e) => SetFname(e.target.value)}/>
-                    </div>
-                    <div className="my-2">
-                        <label htmlFor="lname">Last Name : </label>
-                        <input type="text" className="w-full h-9 border my-2 rounded pl-2" placeholder="User Last Name" 
-                        onChange={(e) => SetLname(e.target.value)}/>
                     </div>
                     <div className="my-2">
                         <label htmlFor="email">Email : </label>
