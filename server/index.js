@@ -10,7 +10,7 @@ const cookieParser = require("cookie-parser")
 
 // make connection between the server and mongoos
 
-mongoose.connect("")
+mongoose.connect("mongodb://127.0.0.1:27017/employee");
 
 const app = express()
 app.use(express.json)
