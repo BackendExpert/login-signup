@@ -10,11 +10,11 @@ const SignUp = () => {
                 <form>
                     <div className="my-2">
                         <label htmlFor="fname">First Name : </label>
-                        <input type="email" className="w-full h-9 border my-2 rounded pl-2" placeholder="User Email" />
+                        <input type="email" className="w-full h-9 border my-2 rounded pl-2" placeholder="User First Name" />
                     </div>
                     <div className="my-2">
                         <label htmlFor="lname">Last Name : </label>
-                        <input type="email" className="w-full h-9 border my-2 rounded pl-2" placeholder="User Email" />
+                        <input type="email" className="w-full h-9 border my-2 rounded pl-2" placeholder="User Last Name" />
                     </div>
                     <div className="my-2">
                         <label htmlFor="email">Email : </label>
@@ -25,18 +25,9 @@ const SignUp = () => {
                         <input type="password" className="w-full h-9 border my-2 rounded pl-2" placeholder="User Password" />
                     </div>       
                     <div className="">
-                        <div className="lg:grid grid-cols-2 gap-3">
-                            <div className="">
-                                <button type="reset" className="w-full h-9 rounded bg-red-600 text-white font-semibold duration-500 hover:bg-red-700">
-                                    Clear
-                                </button>
-                            </div>
-                            <div className="">
-                                <button className="w-full h-9 rounded bg-green-600 text-white font-semibold duration-500 hover:bg-green-700">
-                                    SignUp
-                                </button>
-                            </div>
-                        </div>
+                        <button className="w-full h-9 rounded bg-green-600 text-white font-semibold duration-500 hover:bg-green-700">
+                            SignUp
+                        </button>
                     </div>             
                 </form>
             </div>
