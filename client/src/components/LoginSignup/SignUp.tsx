@@ -31,6 +31,11 @@ const SignUp = () => {
                                     Clear
                                 </button>
                             </div>
+                            <div className="">
+                                <button className="w-full h-9 rounded bg-green-600 text-white font-semibold duration-500 hover:bg-green-700">
+                                    SignUp
+                                </button>
+                            </div>
                         </div>
                     </div>             
                 </form>
