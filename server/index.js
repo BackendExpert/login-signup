@@ -22,11 +22,11 @@ app.use(cookieParser)
 
 // make route for the register
 app.post('/Signup', (req, res) => {
-    const {fname, lname, email, password} = req.body;
+    const {fname, email, password} = req.body;
     //hash password
     bcryt.hash(password, 10)
     .then(hash => {
-        UserModel.create({fname, lname, email, password: hash})
+        UserModel.create({fname, email, password: hash})
         .then(user => res.json({status: "OK"}))
         .catch(err => res.json(err))
     }).catch(err => res.json(err))
