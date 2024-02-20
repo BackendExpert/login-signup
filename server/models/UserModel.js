@@ -10,5 +10,5 @@ const UserSchema = new mongoos.Schema({
     }
 })
 
-const UserModel = mongoos.model("users", UserSchema)
+const UserModel = mongoos.model("register", UserSchema)
 module.exports = UserModel
