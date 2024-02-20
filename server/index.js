@@ -8,6 +8,8 @@ const bcryt = require("bcrypt")
 const jwt = require("jsonwebtoken")
 const cookieParser = require("cookie-parser")
 
+// use UserModel from models folder
+
 // make connection between the server and mongoos
 
 mongoose.connect("mongodb://127.0.0.1:27017/employee");
