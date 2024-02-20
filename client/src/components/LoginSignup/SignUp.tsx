@@ -12,6 +12,7 @@ const SignUp = () => {
                 <h1 className="text-2xl font-semibold text-center pb-4">Login</h1>
                 <hr className="mb-4" />
 
+
                 <form>
                     <div className="my-2">
                         <label htmlFor="fname">First Name : </label>
