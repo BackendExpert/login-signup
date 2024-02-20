@@ -9,7 +9,7 @@ const SignUp = () => {
 
     const headlSubmit = (e) =>{
         e.preventDefault()
-        axios.post('http://localhost:3001/Signup', {name, email, password})
+        axios.post('http://localhost:3001/Signup', {fname, lname, email, password})
         .then(res => {
             alert("User Added")
         }).catch(err => console.log(err))
