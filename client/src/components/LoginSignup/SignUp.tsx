@@ -12,8 +12,7 @@ const SignUp = () => {
                 <h1 className="text-2xl font-semibold text-center pb-4">Login</h1>
                 <hr className="mb-4" />
 
-
-                <form>
+                <form onSubmit={headlSubmit}>
                     <div className="my-2">
                         <label htmlFor="fname">First Name : </label>
                         <input type="email" className="w-full h-9 border my-2 rounded pl-2" placeholder="User First Name" 
