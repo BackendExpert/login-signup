@@ -25,12 +25,12 @@ const SignUp = () => {
                 <form onSubmit={headlSubmit}>
                     <div className="my-2">
                         <label htmlFor="fname">First Name : </label>
-                        <input type="email" className="w-full h-9 border my-2 rounded pl-2" placeholder="User First Name" 
+                        <input type="text" className="w-full h-9 border my-2 rounded pl-2" placeholder="User First Name" 
                         onChange={(e) => SetFname(e.target.value)}/>
                     </div>
                     <div className="my-2">
                         <label htmlFor="lname">Last Name : </label>
-                        <input type="email" className="w-full h-9 border my-2 rounded pl-2" placeholder="User Last Name" 
+                        <input type="text" className="w-full h-9 border my-2 rounded pl-2" placeholder="User Last Name" 
                         onChange={(e) => SetLname(e.target.value)}/>
                     </div>
                     <div className="my-2">
