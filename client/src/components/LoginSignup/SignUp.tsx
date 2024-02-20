@@ -35,7 +35,7 @@ const SignUp = () => {
                         onChange={(e) => SetPassword(e.target.value)}/>
                     </div>       
                     <div className="">
-                        <button className="w-full h-9 rounded bg-green-600 text-white font-semibold duration-500 hover:bg-green-700">
+                        <button type="submit" className="w-full h-9 rounded bg-green-600 text-white font-semibold duration-500 hover:bg-green-700">
                             SignUp
                         </button>
                     </div>             
