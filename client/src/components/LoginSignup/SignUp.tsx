@@ -2,18 +2,17 @@ import axios from "axios"
 import { useState } from "react"
 
 const SignUp = () => {
-    const [fname, SetFname] = useState("")
+    const [name, SetFname] = useState("")
     const [email, SetEmail] = useState("")
     const [password, SetPassword] = useState("")
 
-    const headlSubmit = (e) =>{
+    const headlSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:3001/Signup', {fname, email, password})
+        axios.post('http://localhost:3001/register', {name, email, password})
         .then(res => {
-            alert("User Added")
+            alert("OK")
         }).catch(err => console.log(err))
     }
-
   return (
     <div className="bg-blue-800 w-full h-screen px-[25%]">
         <div className="container mx-auto px-16 py-12">
